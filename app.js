@@ -9,7 +9,7 @@ const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 
-require("dotenv").config();
+const mongo_url = process.env.MONGO_URL;
 
 
 main().then(()=>{
