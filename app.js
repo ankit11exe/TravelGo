@@ -1,3 +1,6 @@
+require("dotenv").config();
+
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -6,7 +9,8 @@ const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 
-const mongo_url = "mongodb://127.0.0.1:27017/travelgo";
+require("dotenv").config();
+
 
 main().then(()=>{
     console.log("Connection done to DB")
